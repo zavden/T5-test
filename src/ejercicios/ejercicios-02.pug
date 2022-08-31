@@ -17,13 +17,13 @@ block pug_contenido
     :markdown-it(html)
             ## Este es un título.
             ## Este es un título.
-            ![Ejemplo](/docs/static/im1.jpg)
-            ![Ejemplo](/docs/static/i1.png)
+            ![Ejemplo](../../static/im1.jpg)
+            ![Ejemplo](../../static/i1.png)
     hr
     hr
     hr
-    +img_path("/docs/static/im1.jpg")
-    +img_path("/docs/static/i1.png")
+    +img_e("im1.jpg")
+    +img_e("i1.png")
 //-
     p=String.raw`$$ x^5 $$`
     each url in codepen_list
