@@ -16,10 +16,22 @@ block html_javascript
 block pug_contenido
     :markdown-it(html)
             ## Importados desde markdown.
+            | Option | Description |
+            | ------ | ----------- |
+            | data   | path to data files to supply the data that will be passed into templates aeraer. |
+            | engine | engine to be used for processing templates. Handlebars is the default. |
+            | ext    | extension to be used for dest files. |
+
+            Right aligned columns
+
+            | Option | Description |
+            | ------:| -----------:|
+            | data   | path to data files to supply the data that will be passed into templates. |
+            | engine | engine to be used for processing templates. Handlebars is the default. |
+            | ext    | extension to be used for dest files. |
+            
             ![Ejemplo](../static/im1.jpg)
             ![Ejemplo](../static/i1.png)
-    hr
-    hr
     hr
     h1 Importados desde PUG
     +img_e("im1.jpg")

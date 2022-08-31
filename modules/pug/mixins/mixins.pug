@@ -62,7 +62,7 @@ mixin img_e(src)
     img(src=`../static/${src}` style=`width: 100%`)
 mixin md_emb(number,padding="1000px")
     .embed-container(style=`padding-bottom: ${padding};`).html-resize
-        iframe.html-resize(src=`/markdown/md-${number}.html` frameborder="0" allowfullscreen)
+        iframe.html-resize(src=`../markdown/md-${number}.html` frameborder="0" allowfullscreen)
 
 mixin codepen_live(index,height_window=310,user=codepen_user)
     -let url = codepen_list[index-1]
