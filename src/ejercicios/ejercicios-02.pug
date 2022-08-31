@@ -13,9 +13,18 @@ block pug_styles
 block html_javascript
     +new_script(`../scripts.js`)
 block pug_contenido
+    :markdown-it(html)
+            ## Este es un título.
+            ## Este es un título.
+            ![Ejemplo](/static/e1-1.png)
+            ![Ejemplo](/static/i1.png)
+            ![Ejemplo](/static/i2.png)
+            ![Ejemplo](/static/i3-full.png)
     +codepen(1)
-    +codepen_url("jONXGLy",2,height_window=600)
-    +html_emb_ej("ej-01")
+    +img_e("i2.png")
+    hr
+    +img_path("/static/im1.jpg")
+    +img_path("/static/i2.png")
 //-
     p=String.raw`$$ x^5 $$`
     each url in codepen_list
