@@ -37,7 +37,7 @@ clean-all:
 	rm -rf node_modules modules package* tsconfig.json docs templates
 
 copy-static:
-	cp -r static docs/
+	cp -r src/static docs/
 
 git-init:
 	git init

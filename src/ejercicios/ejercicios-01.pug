@@ -13,9 +13,9 @@ block pug_styles
 block html_javascript
     +new_script(`../scripts.js`)
 block pug_contenido
+    +md_emb("01")
     +codepen(1)
     +codepen_url("jONXGLy",2,height_window=600)
-    +html_emb_ej("ej-01")
 //-
     p=String.raw`$$ x^5 $$`
     each url in codepen_list
