@@ -55,7 +55,7 @@ mixin html_emb(name,padding="300px")
     .embed-container(style=`padding-bottom: ${padding};`).html-resize
         iframe.html-resize(src=name frameborder="0" allowfullscreen)
 mixin img(src)
-    img(src=`../../static/${src}` style=`width: 100%`)
+    img(src=`../static/${src}` style=`width: 100%`)
 mixin md_emb(number,padding="1000px")
     .embed-container(style=`padding-bottom: ${padding};`).html-resize
         iframe.html-resize(src=`/markdown/md-${number}.html` frameborder="0" allowfullscreen)
